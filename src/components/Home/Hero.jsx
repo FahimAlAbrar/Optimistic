@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import HomeImage from "../../assets/Home1.png";
+import HomeImage from "../../assets/HomeCover/HomeCover.avif"
 
 const Hero = () => {
   return (
     <div
-      className="relative min-h-screen flex items-center px-6 sm:px-12 bg-cover bg-center bg-no-repeat overflow-hidden"
+      className="relative min-h-screen flex items-start px-6 sm:px-12 pt-20 sm:pt-28 bg-cover bg-center bg-no-repeat overflow-hidden"
       style={{ backgroundImage: `url(${HomeImage})` }}
     >
       {/* Dark Overlay with subtle blur to enhance readability */}

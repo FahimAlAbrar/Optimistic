@@ -8,31 +8,37 @@ import { Link } from "react-router-dom";
 const services = [
   {
     title: "Employment Support",
+    slug: "employment-support",
     description:
       "Job placement, skill workshops, and employer partnerships to open doors for every ability.",
   },
   {
     title: "Education & Training",
+    slug: "education-training",
     description:
       "Inclusive learning programs, literacy support, and vocational training tailored to each individual.",
   },
   {
     title: "Healthcare Access",
+    slug: "healthcare-access",
     description:
       "Connecting individuals with allied health professionals and accessible medical services.",
   },
   {
     title: "Community Inclusion",
+    slug: "community-inclusion",
     description:
       "Programs, events, and networks that foster belonging, friendship, and social participation.",
   },
   {
     title: "Advocacy & Rights",
+    slug: "advocacy-rights",
     description:
       "Policy engagement and legal guidance to defend the rights of persons with disabilities.",
   },
   {
     title: "Assistive Technology",
+    slug: "assistive-technology",
     description:
       "Sourcing and training in adaptive devices and digital tools that enhance independence.",
   },
@@ -201,7 +207,7 @@ const Services = () => {
                   </p>
 
                   {/* Learn more */}
-                  <div
+                  {/* <div
                     className="inline-flex items-center gap-2 text-sm font-bold transition-all duration-300"
                     style={{ color: isHovered ? "#fdcb11" : "#f37421" }}
                   >
@@ -210,7 +216,18 @@ const Services = () => {
                       size={13}
                       className="transition-transform duration-300 group-hover:translate-x-1"
                     />
-                  </div>
+                  </div> */}
+                  <Link
+                    to={`/services/${service.slug}`}
+                    className="inline-flex items-center gap-2 text-sm font-bold transition-all duration-300"
+                    style={{ color: isHovered ? "#fdcb11" : "#f37421" }}
+                  >
+                    Learn more
+                    <FaArrowRightLong
+                      size={13}
+                      className="transition-transform duration-300 group-hover:translate-x-1"
+                    />
+                  </Link>
                 </div>
               </div>
             );

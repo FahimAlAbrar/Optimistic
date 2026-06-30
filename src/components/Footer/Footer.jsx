@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "../../assets/Logo/logo.jpg";
 import {
   FaFacebookF,
   FaInstagram,
@@ -13,32 +14,18 @@ const Footer = () => {
   return (
     <footer className="bg-[#fff7f0] border-t border-orange-200 text-[#1d3557]">
       <div className="max-w-7xl mx-auto px-6 py-14">
-
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-
           {/* Company / Logo (same as Navbar) */}
           <div>
-
             {/* Logo */}
-            <div className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 rounded-full border-2 border-[#f37421] flex items-center justify-center">
-                <span className="text-[#f37421] text-xl">✦</span>
-              </div>
-
-              <div>
-                <h1 className="text-xl font-bold text-[#f37421] uppercase">
-                  Optimistic
-                </h1>
-                <p className="text-xs tracking-[2px] text-[#f37421] uppercase">
-                  Disability Services
-                </p>
-              </div>
+            <div className="flex items-center">
+              <img src={Logo} alt="" className="h-25 w-auto object-contain" />
             </div>
 
             <p className="text-gray-600 leading-7 text-sm">
               We empower people with disabilities through inclusion,
-              independence, dignity, and personalised support to create a
-              better future for everyone.
+              independence, dignity, and personalised support to create a better
+              future for everyone.
             </p>
 
             {/* Social Icons */}
@@ -115,7 +102,6 @@ const Footer = () => {
             </h3>
 
             <div className="space-y-4 text-gray-600">
-
               <div className="flex items-start gap-3">
                 <FaMapMarkerAlt className="text-[#f37421] mt-1" />
                 <p>
@@ -133,7 +119,6 @@ const Footer = () => {
                 <FaEnvelope className="text-[#f37421]" />
                 <span>info@optimistic.com</span>
               </div>
-
             </div>
 
             <Link
@@ -143,15 +128,13 @@ const Footer = () => {
               Contact Now
             </Link>
           </div>
-
         </div>
 
         {/* Bottom */}
         <div className="border-t border-orange-200 mt-12 pt-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500 gap-3">
-
           <p>
-            © {new Date().getFullYear()} Optimistic Disability Services.
-            All Rights Reserved.
+            © {new Date().getFullYear()} Optimistic Disability Services. All
+            Rights Reserved.
           </p>
 
           <div className="flex gap-6">
@@ -163,9 +146,7 @@ const Footer = () => {
               Terms & Conditions
             </Link>
           </div>
-
         </div>
-
       </div>
     </footer>
   );

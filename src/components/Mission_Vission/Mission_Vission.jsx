@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const missionItems = [
   {
@@ -43,11 +44,12 @@ const joinItems = [
 const Mission_Vision = () => {
   return (
     <section id="mission" className="bg-white">
-
       {/* ── HERO BANNER ─────────────────────────────────────── */}
       <div
         className="relative py-20 px-6 overflow-hidden"
-        style={{ background: "linear-gradient(135deg, #1e2d4d 0%, #2a3f6f 100%)" }}
+        style={{
+          background: "linear-gradient(135deg, #1e2d4d 0%, #2a3f6f 100%)",
+        }}
       >
         {/* Decorative blobs */}
         <div
@@ -101,12 +103,13 @@ const Mission_Vision = () => {
 
       {/* ── MISSION SECTION ─────────────────────────────────── */}
       <div className="max-w-5xl mx-auto px-6 py-20">
-
         {/* Section label */}
         <div className="flex items-center gap-3 mb-10">
           <div
             className="w-1 h-10 rounded-full"
-            style={{ background: "linear-gradient(180deg, #f37421, #f68c1f, #fdcb11)" }}
+            style={{
+              background: "linear-gradient(180deg, #f37421, #f68c1f, #fdcb11)",
+            }}
           />
           <div>
             <p
@@ -115,7 +118,10 @@ const Mission_Vision = () => {
             >
               What Drives Us
             </p>
-            <h2 className="text-3xl font-extrabold" style={{ color: "#1e2d4d" }}>
+            <h2
+              className="text-3xl font-extrabold"
+              style={{ color: "#1e2d4d" }}
+            >
               Our Mission
             </h2>
           </div>
@@ -133,14 +139,17 @@ const Mission_Vision = () => {
                 className="w-full h-1 rounded-t-xl -mt-6 -mx-6 mb-5 rounded-t-2xl"
                 style={{
                   width: "calc(100% + 48px)",
-                  background: "linear-gradient(90deg, #f37421, #f68c1f, #fdcb11)",
+                  background:
+                    "linear-gradient(90deg, #f37421, #f68c1f, #fdcb11)",
                 }}
               />
 
               {/* Icon */}
               <div
                 className="w-14 h-14 rounded-2xl flex items-center justify-center text-2xl mb-4 transition-transform duration-300 group-hover:scale-110"
-                style={{ background: "linear-gradient(135deg, #fff7f0, #fff3e0)" }}
+                style={{
+                  background: "linear-gradient(135deg, #fff7f0, #fff3e0)",
+                }}
               >
                 {item.icon}
               </div>
@@ -156,7 +165,9 @@ const Mission_Vision = () => {
               {/* Divider */}
               <div
                 className="w-8 h-0.5 rounded-full mb-3 transition-all duration-300 group-hover:w-14"
-                style={{ background: "linear-gradient(90deg, #f37421, #fdcb11)" }}
+                style={{
+                  background: "linear-gradient(90deg, #f37421, #fdcb11)",
+                }}
               />
 
               {/* Description */}
@@ -171,17 +182,21 @@ const Mission_Vision = () => {
       {/* ── VISION SECTION ──────────────────────────────────── */}
       <div
         className="py-16 px-6"
-        style={{ background: "linear-gradient(135deg, #fff7f0, #fff3e0, #fffbf0)" }}
+        style={{
+          background: "linear-gradient(135deg, #fff7f0, #fff3e0, #fffbf0)",
+        }}
       >
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
-
             {/* Left: Vision text */}
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <span
                   className="w-1 h-10 rounded-full"
-                  style={{ background: "linear-gradient(180deg, #f37421, #f68c1f, #fdcb11)" }}
+                  style={{
+                    background:
+                      "linear-gradient(180deg, #f37421, #f68c1f, #fdcb11)",
+                  }}
                 />
                 <div>
                   <p
@@ -190,7 +205,10 @@ const Mission_Vision = () => {
                   >
                     Where We're Headed
                   </p>
-                  <h2 className="text-3xl font-extrabold" style={{ color: "#1e2d4d" }}>
+                  <h2
+                    className="text-3xl font-extrabold"
+                    style={{ color: "#1e2d4d" }}
+                  >
                     Our Vision
                   </h2>
                 </div>
@@ -222,14 +240,17 @@ const Mission_Vision = () => {
               {/* Vision pillars */}
               <div className="grid grid-cols-3 gap-3 mt-8">
                 {[
-                  { value: "Dignity",      color: "#f37421" },
-                  { value: "Equality",     color: "#f68c1f" },
+                  { value: "Dignity", color: "#f37421" },
+                  { value: "Equality", color: "#f68c1f" },
                   { value: "Participation", color: "#fdcb11" },
                 ].map((pillar) => (
                   <div
                     key={pillar.value}
                     className="rounded-2xl p-4 text-center"
-                    style={{ background: "white", border: `2px solid ${pillar.color}` }}
+                    style={{
+                      background: "white",
+                      border: `2px solid ${pillar.color}`,
+                    }}
                   >
                     <div
                       className="text-sm font-extrabold"
@@ -272,14 +293,20 @@ const Mission_Vision = () => {
                 {/* Divider */}
                 <div
                   className="w-16 h-0.5 rounded-full mb-5"
-                  style={{ background: "linear-gradient(90deg, #f37421, #f68c1f, #fdcb11)" }}
+                  style={{
+                    background:
+                      "linear-gradient(90deg, #f37421, #f68c1f, #fdcb11)",
+                  }}
                 />
 
                 {/* Global alignment */}
                 <div className="flex items-center gap-3">
                   <div
                     className="w-10 h-10 rounded-xl flex items-center justify-center text-white text-base"
-                    style={{ background: "linear-gradient(135deg, #f37421, #f68c1f, #fdcb11)" }}
+                    style={{
+                      background:
+                        "linear-gradient(135deg, #f37421, #f68c1f, #fdcb11)",
+                    }}
                   >
                     🌏
                   </div>
@@ -294,14 +321,12 @@ const Mission_Vision = () => {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
 
       {/* ── JOIN OUR MISSION ────────────────────────────────── */}
       <div className="max-w-5xl mx-auto px-6 py-20">
-
         {/* Header */}
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-3">
@@ -320,7 +345,10 @@ const Mission_Vision = () => {
               style={{ background: "#f37421" }}
             />
           </div>
-          <h2 className="text-3xl font-extrabold mb-3" style={{ color: "#1e2d4d" }}>
+          <h2
+            className="text-3xl font-extrabold mb-3"
+            style={{ color: "#1e2d4d" }}
+          >
             Join Our Mission
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto text-sm leading-relaxed">
@@ -339,7 +367,10 @@ const Mission_Vision = () => {
             >
               <div
                 className="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-extrabold mx-auto mb-3"
-                style={{ background: "linear-gradient(135deg, #f37421, #f68c1f, #fdcb11)" }}
+                style={{
+                  background:
+                    "linear-gradient(135deg, #f37421, #f68c1f, #fdcb11)",
+                }}
               >
                 {index + 1}
               </div>
@@ -353,23 +384,24 @@ const Mission_Vision = () => {
           <button
             className="px-8 py-3.5 rounded-full text-white text-sm font-bold shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
             style={{ backgroundColor: "#f37421" }}
-            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#f68c1f")}
-            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#f37421")}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.backgroundColor = "#f68c1f")
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.backgroundColor = "#f37421")
+            }
           >
             Get Involved Today
           </button>
-          <button
+          <Link
+            to="/join-our-mission-details"
             className="px-8 py-3.5 rounded-full text-sm font-bold border-2 transition-all duration-300 hover:bg-orange-50"
             style={{ borderColor: "#f37421", color: "#f37421" }}
           >
             Learn More
-          </button>
+          </Link>
         </div>
       </div>
-
-      {/* ── CTA BANNER ──────────────────────────────────────── */}
-      
-
     </section>
   );
 };

@@ -12,6 +12,9 @@ import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
 import Gallery from "./components/Gallery/Gallery";
 import Location from "./components/Location/Location"
+import Blog from "./components/Blog/Blog";
+import Service_Details from "./components/Services/Service_Details/Service_Details";
+import Join_Our_Mission from "./components/Mission_Vission/Join_Our_Mission/Join_Our_Mission";
 
 const App = () => {
   return (
@@ -22,9 +25,12 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/mission" element={<Mission_Vission />} />
+        <Route path="/join-our-mission-details" element={<Join_Our_Mission />} />
         <Route path="/services" element={<Services />} />
+         <Route path="/services/:slug" element={<Service_Details />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery" element={<Gallery/>}/>
+        <Route path="/blog" element={<Blog/>}/>
         <Route path="/location" element={<Location/>}/>
       </Routes>
 

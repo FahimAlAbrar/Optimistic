@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import { Link } from "react-router-dom";
+import Logo from "../../assets/Logo/logo.jpg";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -30,7 +31,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center gap-3">
+        {/* <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-full border-2 border-[#f37421] flex items-center justify-center">
             <span className="text-[#f37421] text-xl">✦</span>
           </div>
@@ -42,6 +43,10 @@ const Navbar = () => {
               Disability Services
             </p>
           </div>
+        </div> */}
+
+        <div className="flex items-center">
+          <img src={Logo} alt="" className="h-15 w-auto object-contain" />
         </div>
 
         {/* Desktop Menu */}
@@ -84,6 +89,15 @@ const Navbar = () => {
               className="hover:text-[#f37421] transition-colors duration-200"
             >
               Gallery
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/blog"
+              className="
+            hover:text-[#f37421] transition-colors duration-200"
+            >
+              Blog
             </Link>
           </li>
           <li>
@@ -176,6 +190,15 @@ const Navbar = () => {
                 className="hover:text-[#f37421] transition-colors duration-200"
               >
                 Gallery
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/blog"
+                onClick={handleCloseMenu}
+                className="hover:text-[#f37421] transition-colors duration-200"
+              >
+                Blog
               </Link>
             </li>
             <Link

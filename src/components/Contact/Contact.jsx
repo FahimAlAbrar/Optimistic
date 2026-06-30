@@ -111,7 +111,7 @@ const Contact = () => {
                 {
                   icon: <MdEmail size={22} />,
                   label: "Email",
-                  value: "hello@optimisticdisability.org",
+                  value: "hello@optimistic.org",
                   sub: "We reply within 1 business day",
                 },
                 {
@@ -124,7 +124,7 @@ const Contact = () => {
                   icon: <MdLocationOn size={22} />,
                   label: "Location",
                   value: "Dhaka, Bangladesh",
-                  sub: "Australia-wide services available",
+                  sub: "Bangladesh-wide services available",
                 },
               ].map((item) => (
                 <div
@@ -330,7 +330,7 @@ const Contact = () => {
                 </label>
                 <input
                   type="tel"
-                  placeholder="+61 2 0000 0000"
+                  placeholder="+880 1 0000 00000"
                   className="w-full p-3 rounded-xl text-sm transition-all duration-200 focus:outline-none focus:ring-2"
                   style={{
                     border: "1px solid rgba(243,116,33,0.2)",

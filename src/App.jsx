@@ -11,6 +11,7 @@ import Services from "./components/Services/Services";
 import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
 import Gallery from "./components/Gallery/Gallery";
+import Location from "./components/Location/Location"
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery" element={<Gallery/>}/>
+        <Route path="/location" element={<Location/>}/>
       </Routes>
 
       

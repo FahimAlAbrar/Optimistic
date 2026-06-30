@@ -29,7 +29,6 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-
         {/* Logo */}
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-full border-2 border-[#f37421] flex items-center justify-center">
@@ -48,32 +47,58 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-10 text-[#1d3557] font-semibold">
           <li>
-            <Link to="/" className="hover:text-[#f37421] transition-colors duration-200">
+            <Link
+              to="/"
+              className="hover:text-[#f37421] transition-colors duration-200"
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link to="/about" className="hover:text-[#f37421] transition-colors duration-200">
+            <Link
+              to="/about"
+              className="hover:text-[#f37421] transition-colors duration-200"
+            >
               About
             </Link>
           </li>
           <li>
-            <Link to="/services" className="hover:text-[#f37421] transition-colors duration-200">
+            <Link
+              to="/services"
+              className="hover:text-[#f37421] transition-colors duration-200"
+            >
               Services
             </Link>
           </li>
           <li>
-            <Link to="/mission" className="hover:text-[#f37421] transition-colors duration-200">
+            <Link
+              to="/mission"
+              className="hover:text-[#f37421] transition-colors duration-200"
+            >
               Mission
             </Link>
           </li>
           <li>
-            <Link to="/gallery" className="hover:text-[#f37421] transition-colors duration-200">
+            <Link
+              to="/gallery"
+              className="hover:text-[#f37421] transition-colors duration-200"
+            >
               Gallery
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="hover:text-[#f37421] transition-colors duration-200">
+            <Link
+              to="/location"
+              className="hover:text-[#f37421] transition-colors duration-200"
+            >
+              Location
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              className="hover:text-[#f37421] transition-colors duration-200"
+            >
               Contact
             </Link>
           </li>
@@ -84,8 +109,12 @@ const Navbar = () => {
               to="/contact"
               className="ml-6 px-5 py-2 rounded-full font-semibold text-white transition-colors duration-200 shadow-md"
               style={{ backgroundColor: "#f37421" }}
-              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#f68c1f")}
-              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#f37421")}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.backgroundColor = "#f68c1f")
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.backgroundColor = "#f37421")
+              }
             >
               Get Support
             </Link>
@@ -105,27 +134,63 @@ const Navbar = () => {
         <div className="md:hidden bg-white shadow-md px-6 pb-4">
           <ul className="flex flex-col gap-4 font-semibold text-[#1d3557]">
             <li>
-              <Link to="/" onClick={handleCloseMenu} className="hover:text-[#f37421] transition-colors duration-200">
+              <Link
+                to="/"
+                onClick={handleCloseMenu}
+                className="hover:text-[#f37421] transition-colors duration-200"
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/about" onClick={handleCloseMenu} className="hover:text-[#f37421] transition-colors duration-200">
+              <Link
+                to="/about"
+                onClick={handleCloseMenu}
+                className="hover:text-[#f37421] transition-colors duration-200"
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link to="/services" onClick={handleCloseMenu} className="hover:text-[#f37421] transition-colors duration-200">
+              <Link
+                to="/services"
+                onClick={handleCloseMenu}
+                className="hover:text-[#f37421] transition-colors duration-200"
+              >
                 Services
               </Link>
             </li>
             <li>
-              <Link to="/mission" onClick={handleCloseMenu} className="hover:text-[#f37421] transition-colors duration-200">
+              <Link
+                to="/mission"
+                onClick={handleCloseMenu}
+                className="hover:text-[#f37421] transition-colors duration-200"
+              >
                 Mission
               </Link>
             </li>
             <li>
-              <Link to="/contact" onClick={handleCloseMenu} className="hover:text-[#f37421] transition-colors duration-200">
+              <Link
+                to="/gallery"
+                onClick={handleCloseMenu}
+                className="hover:text-[#f37421] transition-colors duration-200"
+              >
+                Gallery
+              </Link>
+            </li>
+            <Link
+              to="/location"
+              onClick={handleCloseMenu}
+              className="hover:text-[#f37421] transition-colors duration-200"
+            >
+              Location
+            </Link>
+            <li>
+              <Link
+                to="/contact"
+                onClick={handleCloseMenu}
+                className="hover:text-[#f37421] transition-colors duration-200"
+              >
                 Contact
               </Link>
             </li>
@@ -136,8 +201,12 @@ const Navbar = () => {
                 to="/contact"
                 className="block mt-3 w-full text-center px-5 py-3 rounded-full text-white font-semibold transition-colors duration-200 shadow-md"
                 style={{ backgroundColor: "#f37421" }}
-                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#f68c1f")}
-                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#f37421")}
+                onMouseEnter={(e) =>
+                  (e.currentTarget.style.backgroundColor = "#f68c1f")
+                }
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.backgroundColor = "#f37421")
+                }
                 onClick={handleCloseMenu}
               >
                 Get Support

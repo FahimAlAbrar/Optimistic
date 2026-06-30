@@ -78,6 +78,7 @@ const Footer = () => {
                 ["About", "/about"],
                 ["Services", "/services"],
                 ["Gallery", "/gallery"],
+                ["Location", "/location"],
                 ["Contact", "/contact"],
               ].map(([name, path]) => (
                 <li key={name}>

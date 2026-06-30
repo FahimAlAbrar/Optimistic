@@ -207,16 +207,6 @@ const Services = () => {
                   </p>
 
                   {/* Learn more */}
-                  {/* <div
-                    className="inline-flex items-center gap-2 text-sm font-bold transition-all duration-300"
-                    style={{ color: isHovered ? "#fdcb11" : "#f37421" }}
-                  >
-                    Learn more
-                    <FaArrowRightLong
-                      size={13}
-                      className="transition-transform duration-300 group-hover:translate-x-1"
-                    />
-                  </div> */}
                   <Link
                     to={`/services/${service.slug}`}
                     className="inline-flex items-center gap-2 text-sm font-bold transition-all duration-300"

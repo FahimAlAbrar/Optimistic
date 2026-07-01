@@ -5,14 +5,14 @@ import HomeImage from "../../assets/HomeCover/HomeCover.avif"
 const Hero = () => {
   return (
     <div
-      className="relative min-h-screen flex items-start px-6 sm:px-12 pt-20 sm:pt-28 bg-cover bg-center bg-no-repeat overflow-hidden"
+      className="relative min-h-screen flex items-center sm:items-start px-6 sm:px-12 pt-0 sm:pt-28 bg-cover bg-center bg-no-repeat overflow-hidden"
       style={{ backgroundImage: `url(${HomeImage})` }}
     >
       {/* Dark Overlay with subtle blur to enhance readability */}
       <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]" />
 
       {/* Content Container */}
-      <div className="relative z-10 max-w-6xl mx-auto w-full py-24 sm:py-32">
+      <div className="relative z-10 max-w-6xl mx-auto w-full py-12 sm:py-30">
         {/* Top Accent Badge */}
         <div className="inline-flex items-center gap-3 mb-6 bg-white/5 border border-white/10 backdrop-blur-md px-4 py-1.5 rounded-full">
           <span className="w-2 h-2 rounded-full bg-[#f37421] animate-pulse" />

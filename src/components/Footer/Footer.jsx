@@ -21,21 +21,25 @@ const Footer = () => {
           {/* Company / Logo (same as Navbar) */}
           <div className="flex flex-col gap-6">
             {/* Logo */}
-            <div className="ml-15">
-              <a href="/" className="flex items-center gap-3">
-              <div className="flex h-12 w-12 items-center justify-center gap-2">
-                <img
-                  src={CompanyLogo}
-                  alt=""
-                  className="h-15 w-15 object-contain"
-                />
-                <img
-                  src={CompanyName}
-                  alt=""
-                  className="h-6 w-auto max-w-[170px] object-contain mt-2"
-                />
-              </div>
-            </a>
+            <div>
+              <Link
+                to="/"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                className="flex items-center gap-2 sm:gap-3"
+              >
+                <div className="flex items-center justify-center gap-2">
+                  <img
+                    src={CompanyLogo}
+                    alt=""
+                    className="h-10 w-10 sm:h-12 sm:w-12 object-contain"
+                  />
+                  <img
+                    src={CompanyName}
+                    alt=""
+                    className="h-5 sm:h-7 md:h-8 w-auto max-w-[140px] sm:max-w-[180px] object-contain mt-2"
+                  />
+                </div>
+              </Link>
             </div>
 
             <p className="text-gray-600 leading-7 text-sm">

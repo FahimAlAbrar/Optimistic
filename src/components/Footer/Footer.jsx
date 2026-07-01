@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/Logo/logo.jpg";
+//import Logo from "../../assets/Logo/logo.jpg";
+import CompanyLogo from "../../assets/Logo/company-logo.jpg";
+import CompanyName from "../../assets/Logo/company-name.jpg";
+
 import {
   FaFacebookF,
   FaInstagram,
@@ -16,10 +19,23 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Company / Logo (same as Navbar) */}
-          <div>
+          <div className="flex flex-col gap-6">
             {/* Logo */}
-            <div className="flex items-center">
-              <img src={Logo} alt="" className="h-25 w-auto object-contain" />
+            <div className="ml-15">
+              <a href="/" className="flex items-center gap-3">
+              <div className="flex h-12 w-12 items-center justify-center gap-2">
+                <img
+                  src={CompanyLogo}
+                  alt=""
+                  className="h-15 w-15 object-contain"
+                />
+                <img
+                  src={CompanyName}
+                  alt=""
+                  className="h-6 w-auto max-w-[170px] object-contain mt-2"
+                />
+              </div>
+            </a>
             </div>
 
             <p className="text-gray-600 leading-7 text-sm">
@@ -29,7 +45,7 @@ const Footer = () => {
             </p>
 
             {/* Social Icons */}
-            <div className="flex gap-3 mt-6">
+            <div className="flex gap-3">
               <a
                 href="#"
                 className="w-10 h-10 rounded-full bg-orange-100 text-[#f37421] hover:bg-[#f37421] hover:text-white flex items-center justify-center transition"

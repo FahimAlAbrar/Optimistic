@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/Logo/logo.jpg";
+//import Logo from "../../assets/Logo/logo.jpg";
+import CompanyLogo from "../../assets/Logo/company-logo.jpg";
+import CompanyName from "../../assets/Logo/company-name.jpg";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -45,15 +47,31 @@ const Navbar = () => {
           </div>
         </div> */}
 
-        <div className="flex items-center">
-          <img src={Logo} alt="" className="h-15 w-auto object-contain" />
-        </div>
+        <Link
+          to="/"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="flex items-center gap-2 sm:gap-3"
+        >
+          <div className="flex items-center justify-center gap-2">
+            <img
+              src={CompanyLogo}
+              alt=""
+              className="h-10 w-10 sm:h-12 sm:w-12 object-contain"
+            />
+            <img
+              src={CompanyName}
+              alt=""
+              className="h-5 sm:h-7 md:h-8 w-auto max-w-[140px] sm:max-w-[180px] object-contain mt-2"
+            />
+          </div>
+        </Link>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-10 text-[#1d3557] font-semibold">
           <li>
             <Link
               to="/"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="hover:text-[#f37421] transition-colors duration-200"
             >
               Home
@@ -62,6 +80,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/about"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="hover:text-[#f37421] transition-colors duration-200"
             >
               About
@@ -70,6 +89,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/services"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="hover:text-[#f37421] transition-colors duration-200"
             >
               Services
@@ -78,6 +98,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/mission"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="hover:text-[#f37421] transition-colors duration-200"
             >
               Mission
@@ -86,6 +107,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/gallery"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="hover:text-[#f37421] transition-colors duration-200"
             >
               Gallery
@@ -94,8 +116,8 @@ const Navbar = () => {
           <li>
             <Link
               to="/blog"
-              className="
-            hover:text-[#f37421] transition-colors duration-200"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className="hover:text-[#f37421] transition-colors duration-200"
             >
               Blog
             </Link>
@@ -103,6 +125,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/location"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="hover:text-[#f37421] transition-colors duration-200"
             >
               Location
@@ -111,6 +134,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/contact"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="hover:text-[#f37421] transition-colors duration-200"
             >
               Contact
@@ -150,7 +174,10 @@ const Navbar = () => {
             <li>
               <Link
                 to="/"
-                onClick={handleCloseMenu}
+                onClick={() => {
+                  handleCloseMenu();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
                 className="hover:text-[#f37421] transition-colors duration-200"
               >
                 Home
@@ -159,7 +186,10 @@ const Navbar = () => {
             <li>
               <Link
                 to="/about"
-                onClick={handleCloseMenu}
+                onClick={() => {
+                  handleCloseMenu();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
                 className="hover:text-[#f37421] transition-colors duration-200"
               >
                 About
@@ -168,7 +198,10 @@ const Navbar = () => {
             <li>
               <Link
                 to="/services"
-                onClick={handleCloseMenu}
+                onClick={() => {
+                  handleCloseMenu();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
                 className="hover:text-[#f37421] transition-colors duration-200"
               >
                 Services
@@ -177,7 +210,10 @@ const Navbar = () => {
             <li>
               <Link
                 to="/mission"
-                onClick={handleCloseMenu}
+                onClick={() => {
+                  handleCloseMenu();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
                 className="hover:text-[#f37421] transition-colors duration-200"
               >
                 Mission
@@ -186,7 +222,10 @@ const Navbar = () => {
             <li>
               <Link
                 to="/gallery"
-                onClick={handleCloseMenu}
+                onClick={() => {
+                  handleCloseMenu();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
                 className="hover:text-[#f37421] transition-colors duration-200"
               >
                 Gallery
@@ -195,7 +234,10 @@ const Navbar = () => {
             <li>
               <Link
                 to="/blog"
-                onClick={handleCloseMenu}
+                onClick={() => {
+                  handleCloseMenu();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
                 className="hover:text-[#f37421] transition-colors duration-200"
               >
                 Blog
@@ -203,7 +245,10 @@ const Navbar = () => {
             </li>
             <Link
               to="/location"
-              onClick={handleCloseMenu}
+              onClick={() => {
+                handleCloseMenu();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
               className="hover:text-[#f37421] transition-colors duration-200"
             >
               Location
@@ -211,7 +256,10 @@ const Navbar = () => {
             <li>
               <Link
                 to="/contact"
-                onClick={handleCloseMenu}
+                onClick={() => {
+                  handleCloseMenu();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
                 className="hover:text-[#f37421] transition-colors duration-200"
               >
                 Contact

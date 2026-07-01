@@ -15,11 +15,13 @@ import Location from "./components/Location/Location"
 import Blog from "./components/Blog/Blog";
 import Service_Details from "./components/Services/Service_Details/Service_Details";
 import Join_Our_Mission from "./components/Mission_Vission/Join_Our_Mission/Join_Our_Mission";
+import ScrollToTop from "./components/Navbar/ScrollToTop";
 
 const App = () => {
   return (
     <div>
       <Navbar />
+      <ScrollToTop/>
 
       <Routes>
         <Route path="/" element={<Home />} />
